@@ -16,7 +16,7 @@ RUN apk add --no-cache curl ca-certificates && \
 
 RUN addgroup -g 2613 pumpkin && \
     adduser -u 2613 -G pumpkin -D -h /pumpkin pumpkin && \
-    chown -R pumpkin:pumpkin /pumpkin
+    chown -R root:root /pumpkin
 
 WORKDIR /pumpkin
 
