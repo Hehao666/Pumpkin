@@ -19,7 +19,6 @@ RUN addgroup -g 2613 pumpkin && \
     chown -R pumpkin:pumpkin /pumpkin
 
 WORKDIR /pumpkin
-USER pumpkin:pumpkin
 
 ENV RUST_BACKTRACE=1
 EXPOSE 25565
